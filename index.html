@@ -1,682 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>RoundUp sales</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   <head>
+      <title>RoundUp sales</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="css/style.css">
-
       <link href='http://fonts.googleapis.com/css?family=Mr+Dafoe' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Amaranth:700' rel='stylesheet' type='text/css'>
-      
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  
+  <!-- for FF, Chrome, Opera -->
+<link rel="icon" type="image/png" href="./assets/logo.svg.svg" sizes="16x16">
+<link rel="icon" type="image/png" href="./assets/logo.svg" sizes="32x32">
 
-  </head>
-<body>
-
-    <!-- <nav class="navbar  navbar-fixed-top ">
-        <div class="container-fluid">
-          <div class="navbar-header mrLeft">
-            <img src="./assets/logo.svg" alt="..." class="img-thumbnail logoImg">
-        </div>
-          <ul class="nav navbar-nav navAlign">
-            <li class="active"><a href="#" style="color: black;">Process</a></li>
-            <li><a href="#" style="color: black;">Services</a></li>
-            <li><a href="#" style="color: black;">Resources</a></li>
-            <li><a href="#" style="color: black;">About</a></li>
-          </ul>
-        </div>
-      </nav> -->
-
+<!-- for IE -->
+<link rel="icon" type="image/x-icon" href="./assets/logo.svg" >
+<link rel="shortcut icon" type="image/x-icon" href="./assets/logo.svg"/>
+    </head>
+   <body>
       <nav class="navbar navbar-expand-sm  navbar navMrn">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <img src="./assets/logo.svg" alt="..." class="img-thumbnail logoImg" style="border: none;">
-
-        <button class="navbar-toggler custom-toggler navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav" style="margin-left: 40px;">
-            <li class="nav-item">
-              <a class="nav-link" style="color: darkslategrey;" href="#Process">Process</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color: darkslategrey;" href="#Services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color: darkslategrey;" href="#Resources">Resources</a>
-            </li>    
-
-            <li class="nav-item">
-              <a class="nav-link" style="color: darkslategrey;" href="#about">About</a>
-            </li>   
-
-
-          </ul>
-        </div>  
+         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+         <img src="./assets/logo.svg" alt="..." class="img-thumbnail logoImg" style="border: none;">
+         <button class="navbar-toggler custom-toggler navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav" style="margin-left: 40px;">
+               <li class="nav-item">
+                  <a class="nav-link" style="color: darkslategrey;" href="#Process">Process</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" style="color: darkslategrey;" href="#Services">Services</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" style="color: darkslategrey;" href="#Resources">Resources</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" style="color: darkslategrey;" href="#about">About</a>
+               </li>
+            </ul>
+         </div>
       </nav>
-
-
-<!-- <div class="container">
-    <div class="row row1">
-
-<div class="col-lg-4 col-md-6 col-xs-12">
-
-<h1 class="bannerText">RoundUp Sales</h1>
-
-<p>"Dramatically Grow your company and Increase ROI today w/ our Marketing, Sales and Technological Solutions."</p>
-
-</div>
-<div class="col-lg-6">
-
-    <img src="./assets/df.svg " class="img-responsive imgBanner" alt="Responsive image">
-
-</div>
-
-    </div>
-</div> -->
-<!-- <div class="sc-AxhCb ccMvAH"><div class="sc-AxmLO gmtmqV"><div class="sc-Axmtr hvJMgY"><img alt="logo" src="/static/media/logo.ccabd9fc.svg" class="sc-AxgMl cVmQYF"><div class="sc-AxhUy fxWvvr"><a href="#Process" class="sc-AxheI dLgsSm">Process</a><a href="#Services" class="sc-AxheI dLgsSm">Services</a><a href="#Resources" class="sc-AxheI dLgsSm">Resources</a><a href="#about" class="sc-AxheI dLgsSm">About</a></div></div><a href="#contact" class="sc-fzozJi kcffzL"><button color="#4e54c8" class="sc-fzoLsD jHhRwp" style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;">Start Growing</button></a></div></div> -->
-
-
-<div id="Home" class="sc-fzpans cKJzHK">
-  <div class="sc-fzplWN hRBsWH">
-    <div class="sc-fznyAO CWQMf">
-      <h1 class="sc-fznZeY gJlwEu">RoundUp Sales</h1>
-      <span class="sc-fzokOt hLgJkJ">Dramatically Grow your company and Increase ROI today w/ our Marketing, Sales and Technological Solutions.</span>
-      <div class="sc-fzqBZW eNQuho startBtn"><a href="#contact">
-        <button  style="margin-left: -40px;" class="sc-fzoLsD gCLard">Start Growing</button></a></div></div>
-      <img src="./assets/df.svg" class="sc-fznKkj fQkkzS"></div></div>
-
-
-
-
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center p40">
-  <h3 class="margin p15">GET A FREE CONSULTATION </h3>
-  <p>We will organize a quick 15 min discovery call to find out more about your specific context and  <br>
-    goals. From then on, we'll build a tailored project and timeline for your company. </p>
-
-</div>
-
-
-<!-- third Container -->
-
-<div id="Services" class="container bg-3 text-center p40">
-  <h3 class="cntHd p15">Our Services </h3>
-
-<div class="polaroid">
-  <!-- data-interval="3000"  -->
-<div class="bs-example">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-          <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-              <li data-target="#myCarousel" data-slide-to="4"></li>
-              <li data-target="#myCarousel" data-slide-to="5"></li>
-
-          </ol>
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-
-            <div class="col-lg-6">
-
-
-              <img src="./assets/website.svg" alt="First Slide" class="cUWXFh">
-
+      <div id="Home" class="sc-fzpans cKJzHK">
+         <div class="sc-fzplWN hRBsWH">
+            <div class="sc-fznyAO CWQMf">
+               <h1 class="sc-fznZeY gJlwEu">RoundUp Sales</h1>
+               <span class="sc-fzokOt hLgJkJ">Dramatically Grow your company and Increase ROI today w/ our Marketing, Sales and Technological Solutions.</span>
+               <div class="sc-fzqBZW eNQuho startBtn"><a href="#contact">
+                  <button  style="margin-left: -40px;" class="sc-fzoLsD gCLard">Start Growing</button></a>
+               </div>
             </div>
-
-                  <div class="col-lg-6">
-
-                    <div class="al-car">
-
-                      <div class="sliderLine">
-                        <h3 class="sliderHead">Marketing Solutions</h3>
-                        <p class="sliderHead">Attract the right leads, delight existing customers</p>
-                      </div>
-                    
-                        <!-- <ul class="a ptclr">
-                          <li> <span>Increasing Marketing Qualified Leads</span></li>
-                          <li> <span>Content Management</span></li>
-                          <li> <span>Conversion Analytics</span></li>
-                          <li> <span>SocialMedia Campaigns</span></li>
-                          <li> <span>E-mail Marketing</span></li>
-                          <li> <span>SEO</span></li>
-                        </ul> -->
-                        <ul class="ulLeft">
-                          <li class="three">
-                            Increasing Marketing Qualified Leads
-                          </li>
-                          <li class="three">
-                            Content Management
-                          </li>
-                           <li class="three">
-                            Conversion Analytics
-                          </li>
-                          <li class="three">
-                            SocialMedia Campaigns
-                          </li>
-                          <li class="three">
-                            E-mail Marketing
-                          </li>
-                         
-                        </ul>
-                    </div>
-                 
-                    </div>
-                </div>
-              </div>
-
-              <div class="carousel-item">
-              
-                <div class="row">
-
-                  <div class="col-lg-6">
-
-                  <div class="al-car">
-
-                    <div class="sliderLine">
-                      <h3 class="sliderHead">Process Mapping</h3>
-                      <p class="sliderHead">Run an efficient and lean company</p>
-                    </div>
-<!--                   
-                    <ul class="a ptclr">
-                      <li> <span>Compliance</span></li>
-                      <li> <span>Process/workflow clarification</span></li>
-                      <li> <span>Internal Audit</span></li>
-                      <li> <span>Role clarity</span></li>
-                      <li> <span>Value propositioning</span></li>
-                    </ul> -->
-                    <ul class="ulLeft">
-                      <li class="three">
-                        Compliance
-                      </li>
-                      <li class="three">
-                        Process/workflow clarification
-                      </li>
-                       <li class="three">
-                        Internal Audit
-                      </li>
-                      <li class="three">
-                        Role clarity
-                      </li>
-                      <li class="three">
-                        Value propositioning
-                      </li>
-                     
-                    </ul>
-                </div>
+            <img src="./assets/df.svg" class="sc-fznKkj fQkkzS">
+         </div>
+      </div>
+      <!-- Second Container -->
+      <div class="container-fluid bg-2 text-center p40">
+         <h3 class="margin p15">GET A FREE CONSULTATION </h3>
+         <p>We will organize a quick 15 min discovery call to find out more about your specific context and  <br>
+            goals. From then on, we'll build a tailored project and timeline for your company. 
+         </p>
+      </div>
+      <!-- third Container -->
+      <div id="Services" class="container bg-3 text-center p40">
+         <h3 class="cntHd p15">Our Services </h3>
+         <div class="polaroid">
+            <!-- data-interval="3000"  -->
+            <div class="bs-example">
+               <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                  <ol class="carousel-indicators">
+                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                     <li data-target="#myCarousel" data-slide-to="3"></li>
+                     <li data-target="#myCarousel" data-slide-to="4"></li>
+                     <li data-target="#myCarousel" data-slide-to="5"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <img src="./assets/website.svg" alt="First Slide" class="cUWXFh">
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="al-car">
+                                 <div class="sliderLine">
+                                    <h3 class="sliderHead">Marketing Solutions</h3>
+                                    <p class="sliderHead">Attract the right leads, delight existing customers</p>
+                                 </div>
+                                 <ul class="ulLeft">
+                                    <li class="three">
+                                       Increasing Marketing Qualified Leads
+                                    </li>
+                                    <li class="three">
+                                       Content Management
+                                    </li>
+                                    <li class="three">
+                                       Conversion Analytics
+                                    </li>
+                                    <li class="three">
+                                       SocialMedia Campaigns
+                                    </li>
+                                    <li class="three">
+                                       E-mail Marketing
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <div class="al-car">
+                                 <div class="sliderLine">
+                                    <h3 class="sliderHead">Process Mapping</h3>
+                                    <p class="sliderHead">Run an efficient and lean company</p>
+                                 </div>
+                                 <ul class="ulLeft">
+                                    <li class="three">
+                                       Compliance
+                                    </li>
+                                    <li class="three">
+                                       Process/workflow clarification
+                                    </li>
+                                    <li class="three">
+                                       Internal Audit
+                                    </li>
+                                    <li class="three">
+                                       Role clarity
+                                    </li>
+                                    <li class="three">
+                                       Value propositioning
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <img src="./assets/mapping.svg" alt="First Slide" class="cUWXFh" >
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-sm-6">
+                              <img src="./assets/improve.svg" alt="First Slide" class="cUWXFh">
+                           </div>
+                           <div class="co-sm-6">
+                              <div class="al-car">
+                                 <div class="sliderLine">
+                                    <h3 class="sliderHead">Website Optimization</h3>
+                                    <p class="sliderHead">Drive Business Goals Online</p>
+                                 </div>
+                                 <ul class="ulLeft">
+                                    <li class="three">
+                                       Reducing Bounce Rate
+                                    </li>
+                                    <li class="three">
+                                       Analyzing sources of traffic
+                                    </li>
+                                    <li class="three">
+                                       Improving your website funnel
+                                    </li>
+                                    <li class="three">
+                                       Optimizing your website code and content
+                                    </li>
+                                    <li class="three">
+                                       Monetization Strategies
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <div class="al-car">
+                                 <div class="sliderLine">
+                                    <h3 class="sliderHead">Sales Operations</h3>
+                                    <p class="sliderHead">Superpower your sales team</p>
+                                 </div>
+                                 <ul class="ulLeft">
+                                    <li class="three">
+                                       Standardizing Reporting
+                                    </li>
+                                    <li class="three">
+                                       CRM Best Practices and Hygiene
+                                    </li>
+                                    <li class="three">
+                                       Sales Copy Creation
+                                    </li>
+                                    <li class="three">
+                                       Prospecting and Email Automation
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <img src="./assets/trainning.svg" class="img-fluid" alt="First Slide" class="cUWXFh">
+                           </div>
+                        </div>
+                     </div>
+                     <!-------------------------------- slider 5---------------- -->
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <img src="./assets/software.svg"  alt="First Slide" class="cUWXFh" >
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="al-car">
+                                 <div class="sliderLine">
+                                    <h3 class="sliderHead">Software Procurement</h3>
+                                    <p class="sliderHead">Use the right Tools! Or let us use them for you.</p>
+                                 </div>
+                                 <ul class="ulLeft">
+                                    <li class="three">
+                                       Digital Transformation
+                                    </li>
+                                    <li class="three">
+                                       SaaS Management
+                                    </li>
+                                    <li class="three">
+                                       Data Processes and Analysis
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- -------------------------------------slider 6----------------------------------------- -->
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <img src="./assets/website.svg" alt="First Slide" class="cUWXFh">
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="al-car">
+                                 <div class="sliderLine">
+                                    <h3 class="sliderHead">Website Optimization</h3>
+                                    <p class="sliderHead">Drive Business Goals Online.</p>
+                                 </div>
+                                 <ul class="ulLeft">
+                                    <li class="three">
+                                       Reducing Bounce Rate
+                                    </li>
+                                    <li class="three">
+                                       Analyzing sources of traffic
+                                    </li>
+                                    <li class="three">
+                                       Improving your website funnel
+                                    </li>
+                                    <li class="three">
+                                       Optimizing your website code and content
+                                    </li>
+                                    <li class="three">
+                                       Monetization Strategies
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <h5 class="sliderHead">Marketing and Sales Training</h5>
+                              <p  class="sliderHead">Unleash your teams potential</p>
+                              <ul class="ulLeft">
+                                 <li class="three">
+                                    Inbound Marketing and Sales Modules
+                                 </li>
+                                 <li class="three">
+                                    Business Analytics and Reporting Methodologies
+                                 </li>
+                                 <li class="three">
+                                    Objection Handling
+                                 </li>
+                                 <li class="three">
+                                    Pitch, Presenting and Cold Calling Techniques
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="col-lg-6">
+                              <img src="./assets/marketing.svg" alt="First Slide" class="cUWXFh">
+                           </div>
+                        </div>
+                     </div>
                   </div>
-
-                  <div class="col-lg-6">
-
-                      <img src="./assets/mapping.svg" alt="First Slide" class="cUWXFh" >
-                  
-                  </div>
-      
-                      </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="row">
+                  <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                     <!-- <span class="carousel-control-prev-icon"></span> -->
+                     <img alt="arrow" src="./assets/arrow.svg" class="sc-fzqARJ bWRkDh">
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                     <!-- <span class="carousel-control-next-icon"></span> -->
+                     <img alt="arrow" src="./assets/right.svg" class="sc-fzqARJ efvMrC">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!------------------------------------------------- Fourth Container----------------------- -->
+      <div id="Process" class="container  text-center p20">
+         <h3 class="cntHd">Process  </h3>
+         <div class="row" style="justify-content: space-between;
+            align-items: center;">
+            <div class="col-sm-2 circle-pad">
+               <div class="circle">
+                  <img src="./assets/support.svg" alt="First Slide" style="width: 5rem;">
+               </div>
+               <p class="sc-fznMAR gSVBBi">1. Online discovery call </p>
+            </div>
+            <div class="col-sm-2  circle-pad">
+               <div class="circle">
+                  <img src="./assets/strategy.svg" alt="First Slide" style="width: 5rem;">
+               </div>
+               <p class="sc-fznMAR gSVBBi">2. Process Mapping </p>
+            </div>
+            <div class="col-sm-2  circle-pad">
+               <div class="circle">
+                  <img src="./assets/agenda.svg" alt="First Slide" style="width: 5rem;">
+               </div>
+               <p class="sc-fznMAR gSVBBi">3. Strategic Planning and Work Order </p>
+            </div>
+            <div class="col-sm-2  circle-pad">
+               <div class="circle">
+                  <img src="./assets/target.svg" alt="First Slide" style="width: 5rem;">
+               </div>
+               <p class="sc-fznMAR gSVBBi">4. Execution</p>
+            </div>
+            <div class="col-sm-2  circle-pad">
+               <div class="circle">
+                  <img src="./assets/handshake.svg" alt="First Slide" style="width: 5rem;">
+               </div>
+               <p class="sc-fznMAR gSVBBi">5. Continuous Support and Improvement</p>
+            </div>
+         </div>
+      </div>
+      <!-- Fifth Container -->
+      <div id="Resources" class="container bg-3 text-center p40">
+         <h3 class="cntHd p15"> Resources </h3>
+         <div class="row">
             <div class="col-sm-6">
-              <img src="./assets/improve.svg" alt="First Slide" class="cUWXFh">
+               <div class="sc-fzoaKM hNuJKS"><img src="./assets/ebooks/5_things_cover.png" class="sc-fzpkqZ fOXUpi">
+                  <a  href="https://share.hsforms.com/19kO1rkYMQEaq-QFXxCOcBw4c2eo">
+                  <button onclick="myCrm()" color="#4e54c8" class="sc-fzoLsD bOnhjs">Get ebook</button></a>
+               </div>
             </div>
-
-                  <div class="co-sm-6">
-
-                    <div class="al-car">
-
-                      <div class="sliderLine">
-                        <h3 class="sliderHead">Website Optimization</h3>
-                        <p class="sliderHead">Drive Business Goals Online</p>
-                      </div>
-                    
-
-                      <ul class="ulLeft">
-                        <li class="three">
-                          Reducing Bounce Rate
-                        </li>
-                        <li class="three">
-                          Analyzing sources of traffic
-                        </li>
-                         <li class="three">
-                          Improving your website funnel
-                        </li>
-                        <li class="three">
-                          Optimizing your website code and content
-                        </li>
-                        <li class="three">
-                          Monetization Strategies
-                        </li>
-                       
-                      </ul>
-
-                    </div>
-                    </div>
-                </div>
-              </div>
-            
-              <div class="carousel-item">
-              
-                <div class="row">
-                  <div class="col-lg-6">
-
-                  <div class="al-car">
-
-                    <div class="sliderLine">
-                      <h3 class="sliderHead">Sales Operations</h3>
-                      <p class="sliderHead">Superpower your sales team</p>
-                    </div>
-                  
-             
-       
-                    <ul class="ulLeft">
-                      <li class="three">
-                        Standardizing Reporting
-                      </li>
-                      <li class="three">
-                        CRM Best Practices and Hygiene
-                      </li>
-                       <li class="three">
-                        Sales Copy Creation
-                      </li>
-                      <li class="three">
-                        Prospecting and Email Automation
-                      </li>
-                     
-                    </ul>
-
-                  </div>
-                    
-                  </div>
-
-                  <div class="col-lg-6">
-                    <img src="./assets/trainning.svg" class="img-fluid" alt="First Slide" class="cUWXFh">
-                  </div>
-      
-                      </div>
-              </div>
-
-<!-------------------------------- slider 5---------------- -->
-
-
-
-<div class="carousel-item">
-  <div class="row">
-<div class="col-lg-6">
-
-<img src="./assets/software.svg"  alt="First Slide" class="cUWXFh" >
-</div>
-
-
-        <div class="col-lg-6">
-
-          <div class="al-car">
-
-            <div class="sliderLine">
-              <h3 class="sliderHead">Software Procurement</h3>
-              <p class="sliderHead">Use the right Tools! Or let us use them for you.</p>
+            <div class="col-sm-6">
+               <div class="sc-fzoaKM hNuJKS"><img src="./assets/ebooks/7_steps_cover.png" class="sc-fzpkqZ fOXUpi">
+                  <a href="https://share.hsforms.com/14HvS6l4LSqeEv9Juqyc4PQ4c2eo">
+                  <button color="#4e54c8" class="sc-fzoLsD bOnhjs">Get ebook</button></a>
+               </div>
             </div>
-
-
-        <ul class="ulLeft">
-          <li class="three">
-            Digital Transformation
-          </li>
-          <li class="three">
-            SaaS Management
-          </li>
-           <li class="three">
-            Data Processes and Analysis
-          </li>
-  
-        </ul>
-
-</div>
-
+         </div>
+         <div class="row">
+            <div class="col-sm-6">
+               <div class="sc-fzoaKM hNuJKS"><img src="./assets/ebooks/Inbound_cover.png" class="sc-fzpkqZ fOXUpi">
+                  <a href="https://share.hsforms.com/1YQnBMUrLTwW_JUK4TsW6OA4c2eo">
+                  <button color="#4e54c8" class="sc-fzoLsD bOnhjs">Get ebook</button></a>
+               </div>
+            </div>
+            <div class="col-sm-6">
+               <div class="sc-fzoaKM hNuJKS">
+                  <img src="./assets/ebooks/Deal_cover.png" class="sc-fzpkqZ fOXUpi">
+                  <a href="https://share.hsforms.com/1kkN7D9nBSgWjUNNBvKV5RQ4c2eo">
+                     <!-- <a href="javascript&colon; void(0);" onclick="window.leadflows.dynoFactory.create(window.leadflows.lfConfig.leadFlows[3 ]).open()"> -->
+                     <button color="#4e54c8" class="sc-fzoLsD bOnhjs">Get ebook</button>
+                  </a>
+               </div>
+            </div>
+         </div>
       </div>
-  </div>
-</div>
-
-
-
-<!-- -------------------------------------slider 6----------------------------------------- -->
-<div class="carousel-item">
-  <div class="row">
-<div class="col-lg-6">
-<img src="./assets/website.svg" alt="First Slide" class="cUWXFh">
-</div>
-
- 
-     <div class="col-lg-6">
-
-      <div class="al-car">
-
-        <div class="sliderLine">
-          <h3 class="sliderHead">Website Optimization</h3>
-          <p class="sliderHead">Drive Business Goals Online.</p>
-        </div>
-    
-
-        <ul class="ulLeft">
-          <li class="three">
-            Reducing Bounce Rate
-          </li>
-          <li class="three">
-            Analyzing sources of traffic
-          </li>
-           <li class="three">
-            Improving your website funnel
-          </li>
-          <li class="three">
-            Optimizing your website code and content
-          </li>
-          <li class="three">
-            Monetization Strategies
-          </li>
-  
-        </ul>
-</div>
-        
+      <!-------------------------Sixth section ------------------------------------------>
+      <div id="about" class="sc-fzomuh gHzJiR">
+         <h1 class="sc-fzqAui eoGDzK">About us</h1>
+         <div class="sc-fzqMdD fZQoNm">
+            <p>Welcome to RoundUp Sales, your number one source for all things Inbound Marketing, Sales and Software Procurement related. We're dedicated to providing you the very best of consultancy services, with an emphasis on coherent, business-driven, measurable tactics and strategies that will allow you to deliver on your vision and rapidly grow your own venture.</p>
+            <p>Founded in 2020 by Joaquim Henriques and Mário Prada, RoundUp Sales has come a long way from its beginnings in Lisbon, Portugal. When Joaquim and Mário first started out, their passion for KPI driven Innovation and business, digital transformation, drove them to start their own business.</p>
+            <p>We hope you enjoy our services as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+            <p>Sincerely,</p>
+            <i>RoundUp Sales</i>
+         </div>
       </div>
-  </div>
-</div>
-
-<div class="carousel-item">
-
-  <div class="row">
-
-    <div class="col-lg-6">
-      <h5 class="sliderHead">Marketing and Sales Training</h5>
-      <p  class="sliderHead">Unleash your teams potential</p>
-  
-      <ul class="ulLeft">
-
-        <li class="three">
-          Inbound Marketing and Sales Modules
-        </li>
-        <li class="three">
-          Business Analytics and Reporting Methodologies
-        </li>
-         <li class="three">
-          Objection Handling
-        </li>
-        <li class="three">
-          Pitch, Presenting and Cold Calling Techniques
-        </li>
-      </ul>
-    </div>
-
-    <div class="col-lg-6">
-      <img src="./assets/marketing.svg" alt="First Slide" class="cUWXFh">
-    </div>
-
-        </div>
-</div>
-
-</div>
-          <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-              <!-- <span class="carousel-control-prev-icon"></span> -->
-              <img alt="arrow" src="./assets/arrow.svg" class="sc-fzqARJ bWRkDh">
-
-          </a>
-
-
-          <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-              <!-- <span class="carousel-control-next-icon"></span> -->
-              <img alt="arrow" src="./assets/right.svg" class="sc-fzqARJ efvMrC">
-          </a>
-
+      <!---------------------------Seventh Section------------------------------------------>
+      <div id="contact" class="sc-fzqPZZ gLiaon">
+         <h1 class="sc-fzoant hXtGXC">Start Growing</h1>
+         <div class="sc-fzoxKX craeZe">
+            <h1 class="sc-fzoKki kNKLJw">Let's work together</h1>
+            <form id="contactForm" class="sc-fzoYkl hfPoTr form" method="POST" >
+               <input placeholder="Company" name="entry.220757503" required class="sc-fzpkJw hctKJM">
+               <input placeholder="Name" name="entry.1848325132" required class="sc-fzpkJw hctKJM">
+               <input placeholder="E-mail" type="email" name="emailAddress" required class="sc-fzpkJw hctKJM">
+               <textarea placeholder="Tell us more about your project." name="entry.210111838" required="" class="sc-fznMnq biVOqy"></textarea>
+               <input type="submit" id="submit" class="sc-fznzOf jxQFAb" value="Start now">
+            </form>
+         </div>
+      </div>
+      <!---------------------------Eighth Section------------------------------------------>
+      <div id="thanks" style="display:none;" class="container-fluid text-center p40" style="background: #676f67; color:white">
+         <h3 class="margin p15">A quick Intro Call</h3>
+         <p style="font-size: 18px;">Let's discuss your goals and use this information to build your own personalized strategic plan.</p>
+         <a href="https://meetings.hubspot.com/joaquim-henriques1">
+         <button color="#4e54c8" class="sc-fzoLsD bOnhjs">Book an Intro Call now</button></a>
+      </div>
+      </div>
+      <div id="myBtn"   class="sc-AxiKw eSvmCJ">
+         <a href="#Home">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="white" height="2rem" width="2rem" xmlns="http://www.w3.org/2000/svg" style="color: white;">
+               <path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
+            </svg>
+         </a>
+      </div>
+      <div class="sc-fzomME hhnKZs">
+         <div class="sc-fzqMAW himZKo">
+            <div class="sc-fzqAbL hCuLgs">
+               <a href="#Process" style="color:white;">Process</a>
+               <a href="#Services" style="color:white;">Services</a>
+               <a href="#Resources" style="color:white;">Resources</a>
+               <a href="#about" style="color:white;">About us</a>
+            </div>
+            <p class="sc-fzoydu ctZjfV">All rights reserved © 2020, <b>Round Up Sales</b></p>
+         </div>
+      </div>
+      <script>
+         $("#contactForm").submit(function(e) {
+             e.preventDefault();
+         
+             swal("Success!", "Thank you for the submission!", "success");
+         
+         $('#contact').hide();
+         $('#thanks').show();
+         document.getElementById('thanks').style.display = "block";
+         
+         
+           });
+         
+         
+          function SveFrm(){
+         
+           e.preventDefault();
+         
           
-      </div>
-  </div>
-
-</div>
-
-</div>
- 
-<!------------------------------------------------- Fourth Container----------------------- -->
-<!-- Second Container -->
-<div id="Process" class="container  text-center p20">
-  <h3 class="cntHd">Process  </h3>
-<div class="row" style="justify-content: space-between;
-align-items: center;">
-
-<div class="col-sm-2 circle-pad">
-  <div class="circle">
-  <img src="./assets/support.svg" alt="First Slide" style="width: 5rem;">
-</div>  
-
-<p class="sc-fznMAR gSVBBi">1. Online discovery call </p>
-
-</div>
-
-<div class="col-sm-2  circle-pad">
-  <div class="circle">
-  <img src="./assets/strategy.svg" alt="First Slide" style="width: 5rem;">
-</div>
-
-<p class="sc-fznMAR gSVBBi">2. Process Mapping </p>
-
-</div>
-
-<div class="col-sm-2  circle-pad">
-  <div class="circle">
-  <img src="./assets/agenda.svg" alt="First Slide" style="width: 5rem;">
-</div>
-
-<p class="sc-fznMAR gSVBBi">3. Strategic Planning and Work Order </p>
-
-</div>
-
-<div class="col-sm-2  circle-pad">
-  <div class="circle">
-  <img src="./assets/target.svg" alt="First Slide" style="width: 5rem;">
-</div>
-<p class="sc-fznMAR gSVBBi">4. Execution</p>
-
-</div>
-
-<div class="col-sm-2  circle-pad">
-  <div class="circle">
-  <img src="./assets/handshake.svg" alt="First Slide" style="width: 5rem;">
-</div>
-
-<p class="sc-fznMAR gSVBBi">5. Continuous Support and Improvement</p>
-
-</div>
-
-
-</div>
-</div>
-
-<!-- Fifth Container -->
-<div id="Resources" class="container bg-3 text-center p40">
-  <h3 class="cntHd p15"> Resources </h3>
-  <div class="row">
-<div class="col-sm-6">
-
-  <!-- <div class="hNuJKS">
-  <img src="./assets/ebooks/5_things_cover.png" class="sc-fzpkqZ fOXUpi">
-
-</div> -->
-<!-- href="/static/media/7 steps for designing a website that sells.a820ab7b.pdf"> -->
-<div class="sc-fzoaKM hNuJKS"><img src="./assets/ebooks/5_things_cover.png" class="sc-fzpkqZ fOXUpi">
-  
-  <a  href="https://share.hsforms.com/19kO1rkYMQEaq-QFXxCOcBw4c2eo">
-    <!-- <a href="javascript&colon; void(0);" onclick="window.leadflows.dynoFactory.create(window.leadflows.lfConfig.leadFlows[0]).open()"> -->
-
-  <button onclick="myCrm()" color="#4e54c8" class="sc-fzoLsD bOnhjs">Get ebook</button></a></div>
-
-
-
-</div>
-<div class="col-sm-6">
-
-<div class="sc-fzoaKM hNuJKS"><img src="./assets/ebooks/7_steps_cover.png" class="sc-fzpkqZ fOXUpi">
-  <a href="https://share.hsforms.com/14HvS6l4LSqeEv9Juqyc4PQ4c2eo">
-
-    <!-- <a href="javascript&colon; void(0);" onclick="window.leadflows.dynoFactory.create(window.leadflows.lfConfig.leadFlows[1]).open()"> -->
-
-  <button color="#4e54c8" class="sc-fzoLsD bOnhjs">Get ebook</button></a></div>
-
-</div>
-</div>
-
-<div class="row">
-  <div class="col-sm-6">
-  
-    <!-- <div class="hNuJKS">
-    <img src="./assets/ebooks/Inbound_cover.png" class="sc-fzpkqZ fOXUpi">
-  
-  </div> -->
-
-  <div class="sc-fzoaKM hNuJKS"><img src="./assets/ebooks/Inbound_cover.png" class="sc-fzpkqZ fOXUpi">
-    <a href="https://share.hsforms.com/1YQnBMUrLTwW_JUK4TsW6OA4c2eo">
-      <!-- <a href="javascript&colon; void(0);" onclick="window.leadflows.dynoFactory.create(window.leadflows.lfConfig.leadFlows[2]).open()"> -->
-
-    <button color="#4e54c8" class="sc-fzoLsD bOnhjs">Get ebook</button></a></div>
-
-  
-  </div>
-  <div class="col-sm-6">
-  
-  <div class="sc-fzoaKM hNuJKS"><img src="./assets/ebooks/Deal_cover.png" class="sc-fzpkqZ fOXUpi">
-    
-    <a href="https://share.hsforms.com/1kkN7D9nBSgWjUNNBvKV5RQ4c2eo">
-      <!-- <a href="javascript&colon; void(0);" onclick="window.leadflows.dynoFactory.create(window.leadflows.lfConfig.leadFlows[3 ]).open()"> -->
-
-    <button color="#4e54c8" class="sc-fzoLsD bOnhjs">Get ebook</button></a></div>
-  
-  </div>
-  </div>
-  </div>
-<!-------------------------Sixth section ------------------------------------------>
-
-
-  <div id="about" class="sc-fzomuh gHzJiR"><h1 class="sc-fzqAui eoGDzK">About us</h1><div class="sc-fzqMdD fZQoNm"><p>Welcome to RoundUp Sales, your number one source for all things Inbound Marketing, Sales and Software Procurement related. We're dedicated to providing you the very best of consultancy services, with an emphasis on coherent, business-driven, measurable tactics and strategies that will allow you to deliver on your vision and rapidly grow your own venture.</p><p>Founded in 2020 by Joaquim Henriques and Mário Prada, RoundUp Sales has come a long way from its beginnings in Lisbon, Portugal. When Joaquim and Mário first started out, their passion for KPI driven Innovation and business, digital transformation, drove them to start their own business.</p><p>We hope you enjoy our services as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p><p>Sincerely,</p><i>RoundUp Sales</i></div></div>
-
-
-  
-<!---------------------------Seventh Section------------------------------------------>
-<!-- action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfBVRIm59mawEHxTBgxXcKtmVeKwHAQOcYWbfO1JKfI_65LKw/formResponse" target="hidden_iframe" -->
-<div id="contact" class="sc-fzqPZZ gLiaon">
-  <h1 class="sc-fzoant hXtGXC">Start Growing</h1>
-  <div class="sc-fzoxKX craeZe">
-    <h1 class="sc-fzoKki kNKLJw">Let's work together</h1>
-    <form id="contactForm" class="sc-fzoYkl hfPoTr form" method="POST" action="./thanks.html">
-      <input placeholder="Company" name="entry.220757503" required class="sc-fzpkJw hctKJM">
-      <input placeholder="Name" name="entry.1848325132" required class="sc-fzpkJw hctKJM">
-      <input placeholder="E-mail" type="email" name="emailAddress" required class="sc-fzpkJw hctKJM">
-      <textarea placeholder="Tell us more about your project." name="entry.210111838" required="" class="sc-fznMnq biVOqy"></textarea>
-      <input type="submit" id="submit" class="sc-fznzOf jxQFAb" value="Start now">
-    </form>
-  </div>
-</div>
-<!-- onsubmit = "return SveFrm();"  -->
-<!---------------------------Eighth Section------------------------------------------>
-<!-- Second Container -->
-<div id="thanks" style="display:none;" class="container-fluid text-center p40" style="background: #676f67; color:white">
-  
-  <h3 class="margin p15">A quick Intro Call</h3>
-  <p>A quick call so we can learn more about your goals,and use this information to personalise the Demo for you </p>
-  <a style="color: #a7c1d4;" href="https://meetings.hubspot.com/joaquim-henriques1">Have a preferred date?</a>
-</div>
-
-
-
-
-<div id="myBtn"   class="sc-AxiKw eSvmCJ"><a href="#Home"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="white" height="2rem" width="2rem" xmlns="http://www.w3.org/2000/svg" style="color: white;"> <path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg></a></div>
-
-<div class="sc-fzomME hhnKZs">
-  <div class="sc-fzqMAW himZKo">
-    <div class="sc-fzqAbL hCuLgs">
-      <a href="#Process" style="color:white;">Process</a>
-      <a href="#Services" style="color:white;">Services</a>
-      <a href="#Resources" style="color:white;">Resources</a>
-      <a href="#about" style="color:white;">About us</a></div>
-      
-      <p class="sc-fzoydu ctZjfV">All rights reserved © 2020, <b>Round Up Sales</b></p></div></div>
-
-
-<script>
-// $("#contactForm").submit(function(e) {
-//     e.preventDefault();
-
-//     swal("Success!", "Thank you for the submission!", "success");
-
-// $('#contact').hide();
-// $('#thanks').show();
-// document.getElementById('thanks').style.display = "block";
-
-
-//   });
-
-
- function SveFrm(){
-
-  e.preventDefault();
-
- 
-}
-
-</script>
-
-<script>
-
-
-
-
-</script>
-<script>
-
-$('#submit').click(function() {
-  e.preventDefault();
-
-
-  // swal("Success!", "Thank you for contacting us!", "success");
-
-  //   $('#contact').hide();
-  //   $('#thanks').show();
-  //   document.getElementById('thanks').style.display = "block";
-
-  
-
-});
-
-</script>
-
-<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-<script>
-
-function myCrm() {
-
-  hbspt.forms.create({
-	portalId: "7281456",
-	formId: "f643b5ae-460c-4046-aaf9-0157c4239c07"
-});
-}
-</script>
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7281456.js"></script>
-<!-- End of HubSpot Embed Code -->
-
-</body>
-  </html>
+         }
+         
+      </script>
+      <script></script>
+      <script></script>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+      <script>
+         function myCrm() {
+         
+           hbspt.forms.create({
+         	portalId: "7281456",
+         	formId: "f643b5ae-460c-4046-aaf9-0157c4239c07"
+         });
+         }
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7281456.js"></script>
+   </body>
+</html>
