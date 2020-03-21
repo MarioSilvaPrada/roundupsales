@@ -13,9 +13,9 @@
       <link href='http://fonts.googleapis.com/css?family=Amaranth:700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+      <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   
   <!-- for FF, Chrome, Opera -->
@@ -27,10 +27,10 @@
 <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.svg"/>
     </head>
    <body>
-      <nav class="navbar navbar-expand-sm  navbar navMrn">
+      <nav class="navbar navbar-expand-sm  navbar navMrn" id="topNav">
          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
          <img src="./assets/logo.svg" alt="..." class="img-thumbnail logoImg" style="border: none;">
-         <button class="navbar-toggler custom-toggler navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <button class="navbar-toggler custom-toggler navbar-toggler-icon" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="outline: none; padding: 0px;">
          <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -75,7 +75,7 @@
          <div class="polaroid">
             <!-- data-interval="3000"  -->
             <div class="bs-example">
-               <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+               <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
                   <ol class="carousel-indicators">
                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                      <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -96,7 +96,7 @@
                               <div class="al-car">
                                  <div class="sliderLine">
                                     <h3 class="sliderHead">Marketing Solutions</h3>
-                                    <p class="sliderHead">Attract the right leads, delight existing customers</p>
+                                    <p class="sliderHead2">Attract the right leads, delight existing customers</p>
                                  </div>
                                  <ul class="ulLeft">
                                     <li class="three">
@@ -125,7 +125,7 @@
                               <div class="al-car">
                                  <div class="sliderLine">
                                     <h3 class="sliderHead">Process Mapping</h3>
-                                    <p class="sliderHead">Run an efficient and lean company</p>
+                                    <p class="sliderHead2">Run an efficient and lean company</p>
                                  </div>
                                  <ul class="ulLeft">
                                     <li class="three">
@@ -160,7 +160,7 @@
                               <div class="al-car">
                                  <div class="sliderLine">
                                     <h3 class="sliderHead">Website Optimization</h3>
-                                    <p class="sliderHead">Drive Business Goals Online</p>
+                                    <p class="sliderHead2">Drive Business Goals Online</p>
                                  </div>
                                  <ul class="ulLeft">
                                     <li class="three">
@@ -189,7 +189,7 @@
                               <div class="al-car">
                                  <div class="sliderLine">
                                     <h3 class="sliderHead">Sales Operations</h3>
-                                    <p class="sliderHead">Superpower your sales team</p>
+                                    <p class="sliderHead2">Superpower your sales team</p>
                                  </div>
                                  <ul class="ulLeft">
                                     <li class="three">
@@ -222,7 +222,7 @@
                               <div class="al-car">
                                  <div class="sliderLine">
                                     <h3 class="sliderHead">Software Procurement</h3>
-                                    <p class="sliderHead">Use the right Tools! Or let us use them for you.</p>
+                                    <p class="sliderHead2">Use the right Tools! Or let us use them for you.</p>
                                  </div>
                                  <ul class="ulLeft">
                                     <li class="three">
@@ -249,7 +249,7 @@
                               <div class="al-car">
                                  <div class="sliderLine">
                                     <h3 class="sliderHead">Website Optimization</h3>
-                                    <p class="sliderHead">Drive Business Goals Online.</p>
+                                    <p class="sliderHead2">Drive Business Goals Online.</p>
                                  </div>
                                  <ul class="ulLeft">
                                     <li class="three">
@@ -276,7 +276,7 @@
                         <div class="row">
                            <div class="col-lg-6">
                               <h5 class="sliderHead">Marketing and Sales Training</h5>
-                              <p  class="sliderHead">Unleash your teams potential</p>
+                              <p  class="sliderHead2">Unleash your teams potential</p>
                               <ul class="ulLeft">
                                  <li class="three">
                                     Inbound Marketing and Sales Modules
@@ -415,8 +415,8 @@
          <button color="#4e54c8" class="sc-fzoLsD bOnhjs">Book an Intro Call now</button></a>
       </div>
       </div>
-      <div id="myBtn"   class="sc-AxiKw eSvmCJ">
-         <a href="#collapsibleNavbar">
+      <div id="myBtn"   class="sc-AxiKw eSvmCJ hide">
+         <a href="#topNav">
             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" color="white" height="2rem" width="2rem" xmlns="http://www.w3.org/2000/svg" style="color: white;">
                <path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
             </svg>
@@ -450,23 +450,27 @@
           function SveFrm(){
          
            e.preventDefault();
-         
-          
+
          }
-         
+
       </script>
-      <script></script>
-      <script></script>
-      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+
       <script>
-         function myCrm() {
-         
-           hbspt.forms.create({
-         	portalId: "7281456",
-         	formId: "f643b5ae-460c-4046-aaf9-0157c4239c07"
-         });
-         }
+myID = document.getElementById("myBtn");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 800) {
+        myID.className = "sc-AxiKw eSvmCJ show"
+    } else {
+        myID.className = "sc-AxiKw eSvmCJ hide"
+    }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+
       </script>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7281456.js"></script>
    </body>
