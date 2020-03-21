@@ -722,7 +722,7 @@ li:hover:before {
 	.hCuLgs a {
 		margin-right: 0rem;
 		cursor: pointer;
-		padding: 1rem;
+		padding: 10px;
 		border-bottom: 2px solid transparent;
 		transition: all 0.5s ease 0s;
 	}
@@ -822,5 +822,37 @@ li:hover:before {
 		width: 2rem;
 		cursor: pointer;
 		transition: all 0.5s ease 0s;
+	}
+
+	.cntHd {
+		text-align: center;
+		font-size: 1.8rem;
+		color: rgb(78, 84, 200);
+		margin: 2rem 0px;
+	}
+
+	.show {
+		opacity: 1;
+		position: fixed;
+		width: 4rem;
+		height: 4rem;
+		position: fixed;
+		bottom: 36px;
+		right: 2rem;
+		cursor: pointer;
+		display: flex;
+		-webkit-box-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		align-items: center;
+		transform: translate(0px);
+		opacity: 1;
+		border-radius: 100%;
+		background: linear-gradient(to right, rgb(143, 148, 251), rgb(78, 84, 200));
+		border-width: 2px;
+		border-style: solid;
+		border-color: white;
+		border-image: initial;
+		transition: all 0.8s ease 0s;
 	}
 }
